@@ -3,3 +3,8 @@ included_files = ["node_modules/.geo/**"]
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
+
+[[redirects]]
+  from = "/*"
+  to = "/stats/:splat"
+  status = 200
